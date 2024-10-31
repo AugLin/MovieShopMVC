@@ -1,0 +1,14 @@
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ApplicationCore.csproj.AssemblyReference.cache
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ApplicationCore.GeneratedMSBuildEditorConfig.editorconfig
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ApplicationCore.AssemblyInfoInputs.cache
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ApplicationCore.AssemblyInfo.cs
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ApplicationCore.csproj.CoreCompileInputs.cache
+D:\Antra\MovieShopMVC\ApplicationCore\bin\Debug\net8.0\ApplicationCore.deps.json
+D:\Antra\MovieShopMVC\ApplicationCore\bin\Debug\net8.0\ApplicationCore.runtimeconfig.json
+D:\Antra\MovieShopMVC\ApplicationCore\bin\Debug\net8.0\ApplicationCore.dll
+D:\Antra\MovieShopMVC\ApplicationCore\bin\Debug\net8.0\ApplicationCore.pdb
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ApplicationCore.dll
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\refint\ApplicationCore.dll
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ApplicationCore.pdb
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ApplicationCore.genruntimeconfig.cache
+D:\Antra\MovieShopMVC\ApplicationCore\obj\Debug\net8.0\ref\ApplicationCore.dll

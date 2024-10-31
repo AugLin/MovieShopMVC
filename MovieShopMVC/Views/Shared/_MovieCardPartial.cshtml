@@ -1,0 +1,85 @@
+﻿@model MovieCardModel
+
+<style>
+    /* Main container for the movie card */
+    .container {
+        position: relative;
+        display: inline-block;
+        margin: 10px;
+        border-radius: 8px; /* Rounded corners for the image itself */
+        overflow: hidden;
+        max-width: 200px; /* Set a max-width if needed */
+    }
+
+        /* Styling for the movie poster image */
+        .container img {
+            display: block;
+            width: 100%; /* Responsive */
+            height: auto;
+            border-radius: 8px; /* Match the container's rounded corners */
+        }
+
+    /* Info overlay for icons, hidden by default */
+    .info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        background-color: rgba(0, 0, 0, 0.5); /* Slightly darken background */
+    }
+
+    /* Display the overlay on hover */
+    .container:hover .info {
+        opacity: 1;
+    }
+
+    /* Icon styling */
+    .icon {
+        width: 50px;
+        height: 50px;
+        background-color: white;
+        color: black;
+        border-radius: 50%; /* Ensures the icon is round */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 5px;
+        font-size: 24px; /* Icon size */
+        transition: all 0.3s ease;
+        box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow */
+        cursor: pointer;
+    }
+
+        /* Slight hover effect on icons */
+        .icon:hover {
+            background-color: #e9f5f5;
+            transform: scale(1.1); /* Enlarges the icon slightly */
+        }
+</style>
+
+<div class="container ml-3 mt-3 p-0">
+
+    <img class="img-fluid" src="@Model.PosterURL" alt="@Model.Title">
+
+    <div class="info">
+        <a asp-controller="Favorite" asp-action="AddFavorite" asp-route-id="@Model.Id">
+            <i class="fas fa-heart icon"></i>
+        </a>
+
+
+        <a asp-controller="Movie" asp-action="Detail" asp-route-id="@Model.Id">
+            <i class="fas fa-search icon"></i>
+        </a>
+
+
+        <a asp-controller="Cart" asp-action="Add" asp-route-id="@Model.Id">
+            <i class="fas fa-shopping-cart icon"></i>
+        </a>
+    </div>
+</div>
