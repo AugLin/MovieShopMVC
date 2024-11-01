@@ -1,11 +1,11 @@
-﻿using ApplicationCore.Models;
+﻿using ApplicationCore.Entities;
 
 namespace ApplicationCore.Contracts.Services
 {
     public interface IGenreService
     {
 
-        public Task<List<GenreModel>> GetGenreList();
+        public Task<IEnumerable<Genre>> GetGenreList();
 
     }
 }

@@ -1,7 +1,6 @@
 ﻿using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
 using ApplicationCore.Entities;
-using ApplicationCore.Models;
 
 namespace Infrastructure.Services
 {
@@ -12,10 +11,10 @@ namespace Infrastructure.Services
         private readonly IPurchaseRepository _purchaseRepository;
         private readonly IMovieService _movieService;
 
-        List<GenreModel> genres = new List<GenreModel>();
-        List<CastModel> casts = new List<CastModel>();
-        List<TrailerModel> trailers = new List<TrailerModel>();
-        List<ReviewRequestModel> movieReviews = new List<ReviewRequestModel>();
+        IEnumerable<Genre> genres = new List<Genre>();
+        IEnumerable<Cast> casts = new List<Cast>();
+        IEnumerable<Trailer> trailers = new List<Trailer>();
+        IEnumerable<Review> movieReviews = new List<Review>();
 
         public UserService(IPurchaseRepository purchaseRepository,
             IMovieService movieService,
@@ -30,49 +29,22 @@ namespace Infrastructure.Services
         }
 
 
-        public async Task<List<PurchaseDetailModel>> GetPurchasesByUserId(int userId)
+        public async Task<IEnumerable<Purchase>> GetPurchasesByUserId(int userId)
         {
-
-
-            var purchases = await _purchaseRepository.GetPurchaseByUserId(userId);
-
-            List<PurchaseDetailModel> movies = new List<PurchaseDetailModel>();
-
-            foreach (var purchase in purchases)
-            {
-                movies.Add(new PurchaseDetailModel
-                {
-                    MovieId = purchase.MovieId,
-                    Title = purchase.Movie.Title,
-                    PosterURL = purchase.Movie.PosterUrl,
-                    PurchaseNumber = purchase.PurchaseNumber.ToString(),
-                    PurchaseDate = purchase.PurchaseTime,
-                    PurchasePrice = purchase.TotalPrice
-                });
-            }
-
-
-            return movies;
+            throw new NotImplementedException();
         }
 
 
 
-        public async Task<List<FavoriteDetailModel>> GetFavoritesByUserId(int userId)
+        public async Task<IEnumerable<Favorite>> GetFavoritesByUserId(int userId)
         {
-            return null;
-        }
-
-        public async Task<List<CartDetailModel>> GetCartByUserId(int userId)
-        {
-            return null;
+            throw new NotImplementedException();
         }
 
 
         public async Task<bool> IsMoviePurchased(int userId, int movieId)
         {
-            return await _purchaseRepository.IsMoviePurcahsed(userId, movieId);
-
-
+            throw new NotImplementedException();
         }
 
 
@@ -80,69 +52,24 @@ namespace Infrastructure.Services
         {
             return false;
         }
-        public async Task<bool> AddMovieReview(ReviewRequestModel request)
+        public async Task<bool> AddMovieReview(Review request)
         {
             throw new NotImplementedException();
         }
 
-        public async Task<MovieDetailByUserModel> GetMovieDetailByIdByUser(int userId, int movieId)
+        public async Task<Movie> GetMovieDetailByIdByUser(int userId, int movieId)
         {
             return null;
         }
 
-        public async Task<bool> AddPurchaseFromCart(List<CartDetailModel> purchases)
+        public Task<User> GetUserProfile(int id)
         {
-            try
-            {
-
-                foreach (var item in purchases)
-                {
-                    await _purchaseRepository.AddPurchaseToUserId(item);
-
-                }
-                return true;
-
-            }
-            catch (Exception ex)
-            {
-                throw new Exception("purchase is not successful, please retry later!");
-                return false;
-            }
+            throw new NotImplementedException();
         }
 
-        public async Task<Purchase> CreatePurchaseAPI(PurchaseRequestModel purchase)
+        Task<Favorite> IUserService.GetMovieDetailByIdByUser(int userId, int movieId)
         {
-
-            try
-            {
-                return await _purchaseRepository.CreatePurchaseAPI(purchase);
-            }
-            catch (Exception ex)
-            {
-
-                throw new Exception("Purchase is not successful, please try again later!");
-
-            }
-
-        }
-        public async Task<UserProfileModel> GetUserProfile(int id)
-        {
-            var user = await _userRepository.GetById(id);
-            var profile = new UserProfileModel
-            {
-                Id = user.Id,
-                Firstname = user.FirstName,
-                Lastname = user.LastName,
-                DateOfBirth = (DateTime)user.DateOfBirth,
-                Email = user.Email,
-                Phone = user.PhoneNumber
-            };
-
-            return profile;
-        }
-        public async Task<bool> UpdateUser(UserProfileModel user)
-        {
-            return await _userRepository.Update(user);
+            throw new NotImplementedException();
         }
     }
 }

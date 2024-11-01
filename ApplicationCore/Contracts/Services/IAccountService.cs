@@ -1,4 +1,4 @@
-﻿using ApplicationCore.Models;
+﻿using ApplicationCore.Entities;
 
 namespace ApplicationCore.Contracts.Services
 {
@@ -6,9 +6,9 @@ namespace ApplicationCore.Contracts.Services
     {
 
 
-        Task<UserLoginResponseModel> RegisterUser(UserRegisterRequestModel model);
-        Task<UserLoginResponseModel> CheckEmail(string email);
+        Task<int> RegisterUser(User model);
+        Task<int> CheckEmail(string email);
 
-        Task<UserLoginResponseModel> LoginUser(UserLoginModel model);
+        Task<int> LoginUser(User model);
     }
 }

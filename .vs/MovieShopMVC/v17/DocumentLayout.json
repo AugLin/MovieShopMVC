@@ -3,36 +3,8 @@
   "WorkspaceRootPath": "D:\\Antra\\MovieShopMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\views\\shared\\_moviecardpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\views\\shared\\_moviecardpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\views\\shared\\_moviecardpartial.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\views\\shared\\_moviecardpartial.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\viewcomponents\\genrelistviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\viewcomponents\\genrelistviewcomponent.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Antra\\MovieShopMVC\\Infrastructure\\Migrations\\20241031002454_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20241031002454_init.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{99BC0F08-DCB6-4216-A153-967425EB7709}|MovieShop.UnitTests\\MovieShop.UnitTests.csproj|d:\\antra\\movieshopmvc\\movieshop.unittests\\movieserviceunittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{99BC0F08-DCB6-4216-A153-967425EB7709}|MovieShop.UnitTests\\MovieShop.UnitTests.csproj|solutionrelative:movieshop.unittests\\movieserviceunittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -42,110 +14,19 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "_MovieCardPartial.css",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Shared\\_MovieCardPartial.css",
-              "RelativeDocumentMoniker": "MovieShopMVC\\Views\\Shared\\_MovieCardPartial.css",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Shared\\_MovieCardPartial.css",
-              "RelativeToolTip": "MovieShopMVC\\Views\\Shared\\_MovieCardPartial.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-10-31T00:49:49.532Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "MovieShopMVC\\Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "MovieShopMVC\\Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T00:45:51.266Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "GenreListViewComponent.cs",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\ViewComponents\\GenreListViewComponent.cs",
-              "RelativeDocumentMoniker": "MovieShopMVC\\ViewComponents\\GenreListViewComponent.cs",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\ViewComponents\\GenreListViewComponent.cs",
-              "RelativeToolTip": "MovieShopMVC\\ViewComponents\\GenreListViewComponent.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T00:44:29.261Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "MovieShopMVC\\Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "MovieShopMVC\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAAC0AAAA0AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T00:35:47.754Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_MovieCardPartial.cshtml",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Shared\\_MovieCardPartial.cshtml",
-              "RelativeDocumentMoniker": "MovieShopMVC\\Views\\Shared\\_MovieCardPartial.cshtml",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Shared\\_MovieCardPartial.cshtml",
-              "RelativeToolTip": "MovieShopMVC\\Views\\Shared\\_MovieCardPartial.cshtml",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAAFMAAAAKAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T00:34:30.689Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MovieShopMVC\\Views\\Home\\Index.cshtml",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MovieShopMVC\\Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2024-10-31T00:30:41.116Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "20241031002454_init.cs",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\Infrastructure\\Migrations\\20241031002454_init.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20241031002454_init.cs",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\Infrastructure\\Migrations\\20241031002454_init.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20241031002454_init.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAATAAAAAAAAAA==",
+              "Title": "MovieServiceUnitTest.cs",
+              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShop.UnitTests\\MovieServiceUnitTest.cs",
+              "RelativeDocumentMoniker": "MovieShop.UnitTests\\MovieServiceUnitTest.cs",
+              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShop.UnitTests\\MovieServiceUnitTest.cs",
+              "RelativeToolTip": "MovieShop.UnitTests\\MovieServiceUnitTest.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAFcAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T00:24:54.622Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Program.cs",
-              "RelativeDocumentMoniker": "MovieShopMVC\\Program.cs",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Program.cs",
-              "RelativeToolTip": "MovieShopMVC\\Program.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAABIAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T00:02:16.834Z",
+              "WhenOpened": "2024-10-31T19:12:58.249Z",
               "EditorCaption": ""
             }
           ]

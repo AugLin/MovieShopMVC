@@ -1,6 +1,6 @@
 ﻿using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
-using ApplicationCore.Models;
+using ApplicationCore.Entities;
 
 namespace Infrastructure.Services
 {
@@ -13,15 +13,15 @@ namespace Infrastructure.Services
             _genreRepository = genreRepository;
         }
 
-        public async Task<List<GenreModel>> GetGenreList()
+        public async Task<IEnumerable<Genre>> GetGenreList()
         {
             var genres = await _genreRepository.GetGenreList();
 
-            var res = new List<GenreModel>();
+            var res = new List<Genre>();
 
             foreach (var genre in genres)
             {
-                res.Add(new GenreModel { Id = genre.Id, Name = genre.Name });
+                res.Add(new Genre { Id = genre.Id, Name = genre.Name });
             }
 
             return res;

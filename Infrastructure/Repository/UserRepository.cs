@@ -1,12 +1,11 @@
 ﻿using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Entities;
-using ApplicationCore.Models;
 using Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository
 {
-    public class UserRepository : Repository<User>, IUserRepository
+    public class UserRepository : BaseRepository<User>, IUserRepository
     {
         private readonly MovieShopDbContext _context;
 
@@ -23,12 +22,12 @@ namespace Infrastructure.Repository
             return user;
         }
 
-        public async Task<User> Add(User entity)
+        public async Task<int> Add(User entity)
         {
             await _context.Set<User>().AddAsync(entity);
             await _context.SaveChangesAsync();
 
-            return entity;
+            return await _context.SaveChangesAsync();
         }
 
         public async Task<User> Delete(int Id)
@@ -36,7 +35,7 @@ namespace Infrastructure.Repository
             throw new NotImplementedException();
         }
 
-        public async Task<List<User>> GetAll()
+        public async Task<IEnumerable<User>> GetAll()
         {
             throw new NotImplementedException();
         }
@@ -47,19 +46,18 @@ namespace Infrastructure.Repository
 
         }
 
-        public async Task<bool> Update(UserProfileModel userUpdated)
+        public async Task<int> Update(User userUpdated)
         {
             try
             {
                 var user = await _context.Set<User>().FirstOrDefaultAsync(u => u.Id == userUpdated.Id);
-                user.FirstName = userUpdated.Firstname;
-                user.LastName = userUpdated.Lastname;
+                user.FirstName = userUpdated.FirstName;
+                user.LastName = userUpdated.LastName;
                 user.Email = userUpdated.Email;
-                user.PhoneNumber = userUpdated.Phone;
+                user.PhoneNumber = userUpdated.PhoneNumber;
                 user.DateOfBirth = userUpdated.DateOfBirth;
-                await _context.SaveChangesAsync();
 
-                return true;
+                return await _context.SaveChangesAsync();
             }
             catch (Exception ex)
             {

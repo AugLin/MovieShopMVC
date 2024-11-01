@@ -1,6 +1,8 @@
 ﻿using ApplicationCore.Contracts.Repositories;
 using ApplicationCore.Contracts.Services;
-using ApplicationCore.Models;
+using ApplicationCore.Entities;
+using Azure;
+using Infrastructure.Repository;
 
 namespace Infrastructure.Services
 {
@@ -8,10 +10,10 @@ namespace Infrastructure.Services
     {
         private readonly IMovieRepository _movieRepository;
 
-        List<GenreModel> genres = new List<GenreModel>();
-        List<CastModel> casts = new List<CastModel>();
-        List<TrailerModel> trailers = new List<TrailerModel>();
-        List<ReviewRequestModel> movieReviews = new List<ReviewRequestModel>();
+        IEnumerable<Genre> genres = new List<Genre>();
+        IEnumerable<Cast> casts = new List<Cast>();
+        IEnumerable<Trailer> trailers = new List<Trailer>();
+        IEnumerable<Review> movieReviews = new List<Review>();
 
 
         public MovieService(IMovieRepository movieRepository)
@@ -19,111 +21,32 @@ namespace Infrastructure.Services
             _movieRepository = movieRepository;
         }
 
-
-        public async Task<List<MovieCardModel>> GetAll()
+        public Task<int> CreateNewMovie(Movie model)
         {
-            var movies = await _movieRepository.GetAll();
-            var res = new List<MovieCardModel>();
-
-            foreach (var m in movies)
-            {
-                res.Add(new MovieCardModel { Id = m.Id, PosterURL = m.PosterUrl, Title = m.Title });
-            }
-            return res;
+            throw new NotImplementedException();
         }
-        public async Task<List<MovieCardModel>> GetTop30GlossingMovies()
+
+        public async Task<Movie> GetMovieDetailsById(int id)
         {
-            var movies = await _movieRepository.GetTop30GlossingMovies();
-            var movieCards = new List<MovieCardModel>();
-
-            foreach (var movie in movies)
-            {
-                movieCards.Add(new MovieCardModel
-                {
-                    Id = movie.Id,
-                    PosterURL = movie.PosterUrl,
-                    Title = movie.Title
-                });
-            }
-            return movieCards;
+            return await _movieRepository.GetById(id);
         }
 
-
-
-        public async Task<PageResultSet<MovieCardModel>> GetMoviesByGenre(string genre, int pageNumber = 1, int pageSize = 30)
-        { 
-            var moviesByPages = await _movieRepository.GetMoviesByGenre(genre, pageNumber, pageSize);
-            var movieCards = new List<MovieCardModel>();
-
-            foreach (var movie in moviesByPages.Data)
-            {
-                movieCards.Add(new MovieCardModel
-                {
-                    Id = movie.Id,
-                    PosterURL = movie.PosterUrl,
-                    Title = movie.Title
-                });
-            }
-            return new PageResultSet<MovieCardModel>(movieCards, pageNumber, pageSize, moviesByPages.Count);
-        }
-
-        public async Task<PageResultSet<MovieCardModel>> GetMoviesByReleaseDate(int pageNumber = 1, int pageSize = 30)
+        public async Task<IEnumerable<Movie>> GetMoviesByGenre(int genreId, int pageNumber = 1, int pageSize = 30)
         {
-            var moviesByPages = await _movieRepository.GetMoviesByReleaseDate(pageNumber, pageSize);
-            var movieCards = new List<MovieCardModel>();
-
-            foreach (var movie in moviesByPages.Data)
-            {
-                movieCards.Add(new MovieCardModel
-                {
-                    Id = movie.Id,
-                    PosterURL = movie.PosterURL,
-                    Title = movie.Title
-                });
-            }
-            return new PageResultSet<MovieCardModel>(movieCards, pageNumber, pageSize, moviesByPages.Count);
+            return await _movieRepository.GetMoviesByGenreId(genreId, pageNumber, pageSize);
         }
 
-
-
-        public async Task<List<MovieCardModel>> GetTopRated30()
+        public async Task<IEnumerable<Movie>> GetMoviesByReleaseDate(int pageNumber = 1, int pageSize = 30)
         {
-            var movies = await _movieRepository.GetTopRated30();
-
-            return movies;
+            throw new NotImplementedException();
         }
 
-        public async Task<PageResultSet<MovieCardModel>> GetMoviesByGenreId(int genreId, int pageNumber, int pageSize)
+        public Task<IEnumerable<Movie>> GetTopRevenueMovies()
         {
-            var moviesByPages = await _movieRepository.GetMoviesByGenreId(genreId, pageNumber, pageSize);
-            var movieCards = new List<MovieCardModel>();
-
-            foreach (var movie in moviesByPages.Data)
-            {
-                movieCards.Add(new MovieCardModel
-                {
-                    Id = movie.Id,
-                    PosterURL = movie.PosterUrl,
-                    Title = movie.Title
-                });
-            }
-            return new PageResultSet<MovieCardModel>(movieCards, pageNumber, pageSize, moviesByPages.Count);
+            return _movieRepository.GetMostRevenueMovies();
         }
 
-
-        public async Task<MovieCreateRequestModel> CreateNewMovie(MovieCreateRequestModel model)
-        {
-            return await _movieRepository.CreateNewMovie(model);
-
-        }
-
-        public async Task<MovieCreateRequestModel> UpdateMovie(MovieCreateRequestModel model)
-        {
-            return await _movieRepository.UpdateMovie(model);
-
-        }
-
-        public Task<MovieDetailsModel> GetMovieDetailsById(int Id)
+        public Task<int> UpdateMovie(Movie model)
         {
             throw new NotImplementedException();
         }

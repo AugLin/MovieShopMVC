@@ -1,5 +1,5 @@
 ﻿
-using ApplicationCore.Models;
+using ApplicationCore.Entities;
 namespace ApplicationCore.Contracts.Services
 {
     public interface ICastService
@@ -7,7 +7,7 @@ namespace ApplicationCore.Contracts.Services
 
     {
 
-        Task<CastDetailsModel> GetById(int Id);
+        Task<Cast> GetById(int Id);
 
     }
 }

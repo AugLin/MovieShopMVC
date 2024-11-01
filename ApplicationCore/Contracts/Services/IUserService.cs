@@ -1,5 +1,4 @@
 ﻿using ApplicationCore.Entities;
-using ApplicationCore.Models;
 
 namespace ApplicationCore.Contracts.Services
 {
@@ -7,20 +6,13 @@ namespace ApplicationCore.Contracts.Services
 
 
     {
-        public Task<UserProfileModel> GetUserProfile(int id);
-        public Task<List<PurchaseDetailModel>> GetPurchasesByUserId(int userId);
-        public Task<List<FavoriteDetailModel>> GetFavoritesByUserId(int userId);
-
-        public Task<List<CartDetailModel>> GetCartByUserId(int userId);
-
-        public Task<MovieDetailByUserModel> GetMovieDetailByIdByUser(int userId, int movieId);
+        public Task<User> GetUserProfile(int id);
+        public Task<IEnumerable<Purchase>> GetPurchasesByUserId(int userId);
+        public Task<IEnumerable<Favorite>> GetFavoritesByUserId(int userId);
+        public Task<Favorite> GetMovieDetailByIdByUser(int userId, int movieId);
 
         public Task<bool> IsMoviePurchased(int userId, int movieId);
 
-
         public Task<bool> IsMovieFavorite(int userId, int id);
-        public Task<Purchase> CreatePurchaseAPI(PurchaseRequestModel purchase);
-        public Task<bool> AddPurchaseFromCart(List<CartDetailModel> purchases);
-        public Task<bool> UpdateUser(UserProfileModel user);
     }
 }

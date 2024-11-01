@@ -22,7 +22,7 @@ namespace MovieShopMVC.Controllers
         [HttpGet]
         public async Task<IActionResult> Index()
         {
-            var movieCards = await _movieService.GetTop30GlossingMovies();
+            var movieCards = await _movieService.GetTopRevenueMovies();
             return View(movieCards);
         }
 

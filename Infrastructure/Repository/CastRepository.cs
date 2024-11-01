@@ -5,17 +5,18 @@ using Microsoft.EntityFrameworkCore;
 
 namespace Infrastructure.Repository
 {
-    public class CastRepository : ICastRepository
+    public class CastRepository : BaseRepository<Cast>, ICastRepository
     {
 
         private readonly MovieShopDbContext _context;
-        public CastRepository(MovieShopDbContext context)
+
+        public CastRepository(MovieShopDbContext connection) : base(connection)
         {
-            _context = context;
+            _context = connection;
         }
+
         public Task<Cast> GetById(int Id)
         {
-
             var cast = _context.Set<Cast>().Include(c => c.Movies).ThenInclude(c => c.Movie)
                 .FirstOrDefaultAsync(c => c.Id == Id);
 
@@ -32,7 +33,7 @@ namespace Infrastructure.Repository
             throw new NotImplementedException();
         }
 
-        public Task<List<Cast>> GetAll()
+        public Task<IEnumerable<Cast>> GetAll()
         {
             throw new NotImplementedException();
         }

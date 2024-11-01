@@ -1,4 +1,4 @@
-﻿@model MovieCardModel
+﻿@model Movie
 
 <style>
     /* Main container for the movie card */
@@ -65,7 +65,7 @@
 
 <div class="container ml-3 mt-3 p-0">
 
-    <img class="img-fluid" src="@Model.PosterURL" alt="@Model.Title">
+    <img class="img-fluid" src="@Model.PosterUrl" alt="@Model.Title">
 
     <div class="info">
         <a asp-controller="Favorite" asp-action="AddFavorite" asp-route-id="@Model.Id">

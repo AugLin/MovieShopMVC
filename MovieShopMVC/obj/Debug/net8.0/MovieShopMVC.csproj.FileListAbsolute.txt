@@ -1,11 +1,3 @@
-D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.csproj.AssemblyReference.cache
-D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.GeneratedMSBuildEditorConfig.editorconfig
-D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.AssemblyInfoInputs.cache
-D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.AssemblyInfo.cs
-D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.csproj.CoreCompileInputs.cache
-D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.MvcApplicationPartsAssemblyInfo.cache
-D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.RazorAssemblyInfo.cache
-D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.RazorAssemblyInfo.cs
 D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\appsettings.Development.json
 D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\appsettings.json
 D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\MovieShopMVC.staticwebassets.runtime.json
@@ -130,6 +122,15 @@ D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\ApplicationCore.dll
 D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\Infrastructure.dll
 D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\Infrastructure.pdb
 D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\ApplicationCore.pdb
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.csproj.AssemblyReference.cache
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.GeneratedMSBuildEditorConfig.editorconfig
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.AssemblyInfoInputs.cache
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.AssemblyInfo.cs
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.csproj.CoreCompileInputs.cache
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.MvcApplicationPartsAssemblyInfo.cache
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.RazorAssemblyInfo.cache
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.RazorAssemblyInfo.cs
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.sourcelink.json
 D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\staticwebassets.build.json
 D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\staticwebassets.development.json
 D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\staticwebassets\msbuild.MovieShopMVC.Microsoft.AspNetCore.StaticWebAssets.props
