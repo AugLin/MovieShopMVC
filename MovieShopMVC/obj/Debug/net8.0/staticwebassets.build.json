@@ -1,11 +1,23 @@
 {
   "Version": 1,
-  "Hash": "3MRatjpTgAuzs5dQwCzIFX9CyTzwp5q+qJc8MKE2uBQ=",
+  "Hash": "W29NxnpSq8olHkNo42W9IR8OQnZNvTWnLvE8WuBKoXk=",
   "Source": "MovieShopMVC",
   "BasePath": "_content/MovieShopMVC",
   "Mode": "Default",
   "ManifestType": "Build",
-  "ReferencedProjectsConfiguration": [],
+  "ReferencedProjectsConfiguration": [
+    {
+      "Identity": "D:\\Antra\\MovieShopMVC\\MovieShipAPI\\MovieShopAPI.csproj",
+      "Version": 2,
+      "Source": "MovieShopAPI",
+      "GetPublishAssetsTargets": "ComputeReferencedStaticWebAssetsPublishManifest;GetCurrentProjectPublishStaticWebAssetItems",
+      "AdditionalPublishProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalPublishPropertiesToRemove": "WebPublishProfileFile;TargetFramework",
+      "GetBuildAssetsTargets": "GetCurrentProjectBuildStaticWebAssetItems",
+      "AdditionalBuildProperties": "Configuration=Debug;Platform=AnyCPU",
+      "AdditionalBuildPropertiesToRemove": "WebPublishProfileFile;TargetFramework"
+    }
+  ],
   "DiscoveryPatterns": [
     {
       "Name": "MovieShopMVC\\wwwroot",

@@ -22,6 +22,8 @@ namespace Infrastructure.Data
         public DbSet<Role> Roles { get; set; }
         public DbSet<User> Users { get; set; }
         public DbSet<UserRole> UserRole { get; set; }
+        public DbSet<Order> Order { get; set; }
+        public DbSet<Order_Detail> Order_Detail { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

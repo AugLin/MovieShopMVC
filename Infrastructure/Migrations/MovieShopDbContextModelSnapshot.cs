@@ -180,6 +180,86 @@ namespace Infrastructure.Migrations
                     b.ToTable("MovieGenres");
                 });
 
+            modelBuilder.Entity("ApplicationCore.Entities.Order", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("BillAmount")
+                        .HasColumnType("DECIMAL(5,2)");
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("CustomerName")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(2084)");
+
+                    b.Property<DateTime>("Order_Date")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Order_Status")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(2084)");
+
+                    b.Property<string>("PaymentMethod")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(2084)");
+
+                    b.Property<string>("PaymentName")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(2084)");
+
+                    b.Property<string>("ShippingAddress")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(2084)");
+
+                    b.Property<string>("ShippingMethod")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(2084)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Order");
+                });
+
+            modelBuilder.Entity("ApplicationCore.Entities.Order_Detail", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<decimal>("Discount")
+                        .HasColumnType("DECIMAL(3,2)");
+
+                    b.Property<int>("OrderId")
+                        .HasColumnType("int");
+
+                    b.Property<decimal>("Price")
+                        .HasColumnType("DECIMAL(5,2)");
+
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ProductName")
+                        .IsRequired()
+                        .HasColumnType("VARCHAR(2084)");
+
+                    b.Property<int>("Quantity")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("OrderId");
+
+                    b.ToTable("Order_Detail");
+                });
+
             modelBuilder.Entity("ApplicationCore.Entities.Purchase", b =>
                 {
                     b.Property<int>("MovieId")
@@ -390,6 +470,15 @@ namespace Infrastructure.Migrations
                     b.Navigation("Movie");
                 });
 
+            modelBuilder.Entity("ApplicationCore.Entities.Order_Detail", b =>
+                {
+                    b.HasOne("ApplicationCore.Entities.Order", null)
+                        .WithMany("Order_Detail")
+                        .HasForeignKey("OrderId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+                });
+
             modelBuilder.Entity("ApplicationCore.Entities.Purchase", b =>
                 {
                     b.HasOne("ApplicationCore.Entities.Movie", "Movie")
@@ -475,6 +564,11 @@ namespace Infrastructure.Migrations
                     b.Navigation("Genres");
 
                     b.Navigation("Trailers");
+                });
+
+            modelBuilder.Entity("ApplicationCore.Entities.Order", b =>
+                {
+                    b.Navigation("Order_Detail");
                 });
 
             modelBuilder.Entity("ApplicationCore.Entities.Role", b =>

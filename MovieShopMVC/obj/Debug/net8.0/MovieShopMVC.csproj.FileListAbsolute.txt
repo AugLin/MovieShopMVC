@@ -147,3 +147,13 @@ D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\refint\MovieShopMVC.dll
 D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.pdb
 D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.genruntimeconfig.cache
 D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\ref\MovieShopMVC.dll
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\MovieShopAPI.deps.json
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\MovieShopAPI.runtimeconfig.json
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\MovieShopAPI.exe
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\Microsoft.OpenApi.dll
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\MovieShopAPI.dll
+D:\Antra\MovieShopMVC\MovieShopMVC\bin\Debug\net8.0\MovieShopAPI.pdb
+D:\Antra\MovieShopMVC\MovieShopMVC\obj\Debug\net8.0\MovieShopMVC.MvcApplicationPartsAssemblyInfo.cs

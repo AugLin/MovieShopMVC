@@ -1,0 +1,8 @@
+D:\Antra\MovieShopMVC\MovieShipAPI\obj\Debug\net8.0\MovieShipAPI.csproj.AssemblyReference.cache
+D:\Antra\MovieShopMVC\MovieShipAPI\obj\Debug\net8.0\MovieShipAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Antra\MovieShopMVC\MovieShipAPI\obj\Debug\net8.0\MovieShipAPI.AssemblyInfoInputs.cache
+D:\Antra\MovieShopMVC\MovieShipAPI\obj\Debug\net8.0\MovieShipAPI.AssemblyInfo.cs
+D:\Antra\MovieShopMVC\MovieShipAPI\obj\Debug\net8.0\MovieShipAPI.csproj.CoreCompileInputs.cache
+D:\Antra\MovieShopMVC\MovieShipAPI\obj\Debug\net8.0\MovieShipAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Antra\MovieShopMVC\MovieShipAPI\obj\Debug\net8.0\MovieShipAPI.MvcApplicationPartsAssemblyInfo.cache
+D:\Antra\MovieShopMVC\MovieShipAPI\obj\Debug\net8.0\MovieShipAPI.sourcelink.json
