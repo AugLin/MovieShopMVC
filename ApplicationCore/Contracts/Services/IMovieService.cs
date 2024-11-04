@@ -11,6 +11,7 @@ namespace ApplicationCore.Contracts.Services
 
         public Task<int> CreateNewMovie(Movie model);
         public Task<int> UpdateMovie(Movie model);
+        public Task<int> GetCountOfMoviesByGenre(int id);
 
     }
 }

@@ -1,0 +1,57 @@
+﻿@model List<Movie>
+@{
+    ViewData["Title"] = "Movies by Genre";
+}
+
+<div class="text-center">
+    <div class="container-fluid">
+        <div class="row">
+            @foreach (var movieCard in Model)
+            {
+                <div class="col-6 col-lg-3 col-sm-4 col-xl-2">
+                    <partial name="_MovieCardPartial" model="movieCard" />
+                </div>
+            }
+        </div>
+    </div>
+
+    <nav aria-label="Page navigation" style="margin-bottom: 50px">
+        <ul class="pagination justify-content-center">
+            @if (ViewBag.CurrentPage > 1)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Genre" asp-controller="Movie" asp-route-id="@ViewBag.CurrentGenreId" asp-route-page="1">First Page</a>
+                </li>
+            }
+
+            @if (ViewBag.CurrentPage > 5)
+            {
+                <li class="page-item disabled"><span class="page-link">...</span></li>
+            }
+
+            @{
+                int start = Math.Max(1, ViewBag.CurrentPage - 4);
+                int end = Math.Min(ViewBag.TotalPages, ViewBag.CurrentPage + 4);
+
+                for (int i = start; i <= end; i++)
+                {
+                    <li class="page-item @(i == ViewBag.CurrentPage ? "active" : "")">
+                        <a class="page-link" asp-action="Genre" asp-controller="Movie" asp-route-id="@ViewBag.CurrentGenreId" asp-route-page="@i">@i</a>
+                    </li>
+                }
+            }
+
+            @if (ViewBag.CurrentPage < ViewBag.TotalPages - 4)
+            {
+                <li class="page-item disabled"><span class="page-link">...</span></li>
+            }
+
+            @if (ViewBag.CurrentPage < ViewBag.TotalPages)
+            {
+                <li class="page-item">
+                    <a class="page-link" asp-action="Genre" asp-controller="Movie" asp-route-id="@ViewBag.CurrentGenreId" asp-route-page="@ViewBag.TotalPages">Last Page</a>
+                </li>
+            }
+        </ul>
+    </nav>
+</div>

@@ -41,24 +41,23 @@ public class MovieRepository : BaseRepository<Movie>, IMovieRepository
 
     public async Task<IEnumerable<Movie>> GetMoviesByGenreId(int genreId, int pageNumber = 1, int pageSize = 30)
     {
-        var movies = await _context.Movies
-                 .Join(
-                     _context.MovieGenres,
-                     movie => movie.Id,
-                     movieGenre => movieGenre.MovieId,
-                     (movie, movieGenre) => new { movie, movieGenre }
-                 )
-                 .Where(mg => mg.movieGenre.GenreId == genreId)
-                 .Select(mg => mg.movie)
-                 .OrderByDescending(m => m.Revenue)
-                 .Skip((pageNumber - 1) * pageSize)
-                 .Take(pageSize)
-                 .Distinct()
-                 .ToListAsync();
+        var movies = await _context.Set<MovieGenre>()
+            .Where(mg => mg.GenreId == genreId)
+            .Include(m => m.Movie)
+            .OrderByDescending(m => m.Movie.Revenue)
+            .Select(mg => new Movie { Id = mg.MovieId, Title = mg.Movie.Title, PosterUrl = mg.Movie.PosterUrl})
+            .Skip((pageNumber - 1) * pageSize)
+            .Take(pageSize)
+            .ToListAsync();
 
         return movies;
     }
 
+    public async Task<int> GetCountOfMoviesByGenre(int id)
+    {
+        return await _context.MovieGenres
+                    .Where(m => m.GenreId == id).CountAsync();
+    }
 
     public async Task<IEnumerable<Review>> GetReviews(int Id)
     {

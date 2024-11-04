@@ -50,5 +50,10 @@ namespace Infrastructure.Services
         {
             throw new NotImplementedException();
         }
+
+        public async Task<int> GetCountOfMoviesByGenre(int id)
+        {
+            return await _movieRepository.GetCountOfMoviesByGenre(id);
+        }
     }
 }

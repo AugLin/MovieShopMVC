@@ -3,8 +3,20 @@
   "WorkspaceRootPath": "D:\\Antra\\MovieShopMVC\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{99BC0F08-DCB6-4216-A153-967425EB7709}|MovieShop.UnitTests\\MovieShop.UnitTests.csproj|d:\\antra\\movieshopmvc\\movieshop.unittests\\movieserviceunittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{99BC0F08-DCB6-4216-A153-967425EB7709}|MovieShop.UnitTests\\MovieShop.UnitTests.csproj|solutionrelative:movieshop.unittests\\movieserviceunittest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\views\\movie\\genre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\views\\movie\\genre.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|d:\\antra\\movieshopmvc\\movieshopmvc\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7BFED038-4B4C-4C23-B9A0-95CB5D621FC4}|MovieShopMVC\\MovieShopMVC.csproj|solutionrelative:movieshopmvc\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2A7786-E109-4B48-BC13-D65F9A3C4404}|Infrastructure\\Infrastructure.csproj|d:\\antra\\movieshopmvc\\infrastructure\\repository\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2A7786-E109-4B48-BC13-D65F9A3C4404}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repository\\movierepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{9D2A7786-E109-4B48-BC13-D65F9A3C4404}|Infrastructure\\Infrastructure.csproj|d:\\antra\\movieshopmvc\\infrastructure\\service\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{9D2A7786-E109-4B48-BC13-D65F9A3C4404}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\service\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +26,58 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MovieServiceUnitTest.cs",
-              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShop.UnitTests\\MovieServiceUnitTest.cs",
-              "RelativeDocumentMoniker": "MovieShop.UnitTests\\MovieServiceUnitTest.cs",
-              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShop.UnitTests\\MovieServiceUnitTest.cs",
-              "RelativeToolTip": "MovieShop.UnitTests\\MovieServiceUnitTest.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAowFcAAABDAAAAAAAAAA==",
+              "DocumentIndex": 3,
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\Infrastructure\\Service\\MovieService.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Service\\MovieService.cs",
+              "ToolTip": "D:\\Antra\\MovieShopMVC\\Infrastructure\\Service\\MovieService.cs",
+              "RelativeToolTip": "Infrastructure\\Service\\MovieService.cs",
+              "ViewState": "AgIAACAAAAAAAAAAAAAwwDgAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-31T19:12:58.249Z",
+              "WhenOpened": "2024-11-04T01:41:22.28Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MovieRepository.cs",
+              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\Infrastructure\\Repository\\MovieRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repository\\MovieRepository.cs",
+              "ToolTip": "D:\\Antra\\MovieShopMVC\\Infrastructure\\Repository\\MovieRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repository\\MovieRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T01:36:55.741Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Genre.cshtml",
+              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Movie\\Genre.cshtml",
+              "RelativeDocumentMoniker": "MovieShopMVC\\Views\\Movie\\Genre.cshtml",
+              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Views\\Movie\\Genre.cshtml",
+              "RelativeToolTip": "MovieShopMVC\\Views\\Movie\\Genre.cshtml",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2024-11-04T00:43:51.913Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MovieController.cs",
+              "DocumentMoniker": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Controllers\\MovieController.cs",
+              "RelativeDocumentMoniker": "MovieShopMVC\\Controllers\\MovieController.cs",
+              "ToolTip": "D:\\Antra\\MovieShopMVC\\MovieShopMVC\\Controllers\\MovieController.cs",
+              "RelativeToolTip": "MovieShopMVC\\Controllers\\MovieController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-04T00:38:13.087Z",
               "EditorCaption": ""
             }
           ]

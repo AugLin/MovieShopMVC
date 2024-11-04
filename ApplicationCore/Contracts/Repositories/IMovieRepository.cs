@@ -23,5 +23,6 @@ namespace ApplicationCore.Contracts.Repositories
         Task<int> CreateNewMovie(Movie model);
 
         Task<int> UpdateMovie(Movie model);
+        Task<int> GetCountOfMoviesByGenre(int id);
     }
 }
